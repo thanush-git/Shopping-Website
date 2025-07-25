@@ -1,0 +1,29 @@
+.heroPic {
+    height: 400px;
+}
+
+.homeContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+}
+
+.heading {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: #FF3131;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.despBody {
+    font-size: x-large;
+}
+
+.heroBody {
+    display: flex;
+    flex-direction: column;
+}

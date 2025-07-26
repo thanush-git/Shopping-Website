@@ -1,0 +1,24 @@
+.cardsContainer{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 40px;
+}
+
+.card{
+    text-overflow: ellipsis;
+}
+
+.title{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.addToCart{
+        margin-top: 10px;
+}
+
+.link{
+    all:unset;
+}

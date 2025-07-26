@@ -7,6 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #F1EFE7;
+    width: 100%;
 }
 
 .links a {
@@ -22,7 +28,8 @@
     gap: 20px;
 }
 
-.outlet {
+.outlet{
+    padding-top: 150px;
     display: flex;
     justify-content: center;
 }

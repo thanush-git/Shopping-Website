@@ -3,14 +3,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Nav from "./Nav";
 import Home from "./Home";
 import Shop from "./Shop";
+import Cart from "./Cart";
 
 export type sample = {
-    id: number,
-    title: string,
-    price: number,
-    description: string,
-    category: string,
-    image: string
+  id: number,
+  title: string,
+  price: number,
+  description: string,
+  category: string,
+  image: string
 }
 
 type CartStates = {
@@ -19,8 +20,8 @@ type CartStates = {
 };
 
 type Cart = {
-    cart: sample[],
-    setCart: React.Dispatch<React.SetStateAction<sample[]>>;
+  cart: sample[],
+  setCart: React.Dispatch<React.SetStateAction<sample[]>>;
 }
 
 
@@ -34,19 +35,24 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Nav count={count}/>,
+      element: <Nav count={count} />,
       children: [
         { index: true, element: <Home /> },
         {
           path: "shop",
-          element: <Shop count={count} setCount={setCount} cart={cart} setCart={setCart}/>,
+          element: <Shop count={count} setCount={setCount} cart={cart} setCart={setCart} />,
         },
+        {
+          path: "cart",
+          element: <Cart cart={cart} />
+        }
       ],
     },
     {
       path: "home",
       element: <Home />,
     },
+
   ]);
 
   return <RouterProvider router={router} />;

@@ -17,8 +17,10 @@ function LandingPage({count} : NavProps){
                 </div>
                 <div className={styles.links}>
                     <div>
+                        <Link to="cart">
                         <img style={{height: "30px"}} src={shopping} alt="" />
                         <Text>{count}</Text>
+                        </Link>
                     </div>
                     <Link to="/">Home</Link>
                     <Link to="shop">Shop</Link>

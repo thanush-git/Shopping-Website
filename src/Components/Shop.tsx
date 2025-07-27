@@ -46,6 +46,9 @@ function Shop({ count, setCount, cart, setCart } : ShopProps) {
                                         <Text as="p" size="3" className={styles.title}>
                                             {item.title}
                                         </Text>
+                                         <Text as="p" size="3" className={styles.title}>
+                                            <strong>${item.price}</strong>
+                                        </Text>
                                         <Button className={styles.addToCart} onClick={()=> handleAddToCart(item)}>
 	                                        Add to cart
                                         </Button>
